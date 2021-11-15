@@ -1,3 +1,5 @@
+import swaggerUi from 'swagger-ui-express'
+import swaggerFile from '../swagger_output.json'
 import express, { json } from "express";
 import morgan from "morgan";
 import cors from 'cors';
@@ -8,7 +10,8 @@ import fileupload from 'express-fileupload';
 // IMPORT ROUTE
 import participantesRoutes from './routes/participantes.routes'
 import participantesAgregadosRoutes from './routes/participantesAgregados.routes'
-import documentosRoutes from "./routes/documentos.routes";
+import postulacionesRoutes from './routes/postulaciones.routes'
+
 
 //  APP
 const  app = express();
@@ -22,7 +25,8 @@ app.use(fileupload());
 // ROUTES
 app.use('/api/participantes', participantesRoutes);
 app.use('/api/partipantesAgregados', participantesAgregadosRoutes);
-app.use('/api/documentos', documentosRoutes);
+app.use('/api/postulaciones', postulacionesRoutes);
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 
 

@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon src/index.js --exec ./node_modules/.bin/babel-node src/index.js",
+    "start": "nodemon  --experimental-modules --es-module-specifier-resolution=node src/index.js --exec ./node_modules/.bin/babel-node src/index.js",
+    "swagger-autogen": "node --experimental-modules --es-module-specifier-resolution=node swagger.js",
     "build": "babel src -d dist "
   },
   "repository": {
@@ -30,7 +32,8 @@
     "morgan": "^1.10.0",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
-    "sequelize": "^6.6.5"
+    "sequelize": "^6.6.5",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
@@ -39,6 +42,7 @@
     "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.15.6",
-    "nodemon": "^2.0.13"
+    "nodemon": "^2.0.13",
+    "swagger-autogen": "^2.12.5"
   }
 }

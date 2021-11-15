@@ -17,7 +17,7 @@ router.delete('/:id', eliminarParticipante);
 
 router.get('/participante/:id', obtenerParticipantesByIdParticipante);
 router.get('/:id', consultarParctipanteAgregado);
-router.get('/', consultarParctipantesAgregados);
+router.get('/consultarParctipantesUsuario/:idParticipante', consultarParctipantesAgregados);
 
 
 export default router;

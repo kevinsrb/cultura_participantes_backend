@@ -63,7 +63,22 @@ const Participantes = sequelizeconfig.define('participantes', {
     correo_electronico: {
         type: Sequelize.STRING,
     },
+    documentos : {
+        type: Sequelize.JSON,
+    },
     tipo_participante: {
+        type: Sequelize.INTEGER,
+    },
+    links: {
+        type: Sequelize.JSON,
+    },
+    postulaciones: {
+        type: Sequelize.JSON,
+    },
+    datos_empresa: {
+        type: Sequelize.JSON,
+    },
+    usuario_id: {
         type: Sequelize.INTEGER,
     },
     fecha_creacion: {

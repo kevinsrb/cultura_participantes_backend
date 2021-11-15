@@ -73,7 +73,14 @@ export async function crearParticipantes(req, res) {
 export async function consultarParctipantesAgregados(req, res) {
  
   try {
-    const participantesAgregados = await ParticipantesAgregados.findAll();
+    const {idParticipante} = req.params;
+    console.log(idParticipante)
+
+    const participantesAgregados = await ParticipantesAgregados.findAll({
+      where: {
+        participante_id: idParticipante,
+      },
+    });
     res.json({
       data: participantesAgregados,
     });
