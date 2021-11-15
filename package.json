@@ -9,16 +9,6 @@
     "swagger-autogen": "node --experimental-modules --es-module-specifier-resolution=node swagger.js",
     "build": "babel src -d dist "
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CamiloFr/BACK-END/cultura_participantes_backend.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CamiloFr/BACK-END/cultura_participantes_backend/issues"
-  },
-  "homepage": "https://github.com/CamiloFr/BACK-END/cultura_participantes_backend#readme",
   "dependencies": {
     "@babel/runtime": "^7.15.4",
     "bcrypt": "^5.0.1",
