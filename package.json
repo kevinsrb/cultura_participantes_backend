@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CamiloFr/cultura_usuarios_backend.git"
+    "url": "git+https://github.com/CamiloFr/BACK-END/cultura_participantes_backend.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CamiloFr/cultura_usuarios_backend/issues"
+    "url": "https://github.com/CamiloFr/BACK-END/cultura_participantes_backend/issues"
   },
-  "homepage": "https://github.com/CamiloFr/cultura_usuarios_backend#readme",
+  "homepage": "https://github.com/CamiloFr/BACK-END/cultura_participantes_backend#readme",
   "dependencies": {
     "@babel/runtime": "^7.15.4",
     "bcrypt": "^5.0.1",
